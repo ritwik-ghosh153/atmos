@@ -79,9 +79,9 @@ class _HomeState extends State<Home> {
               Row(
                 children: <Widget>[
                   SizedBox(width: 10,),
-                  Text('$temp' ?? '',
+                  Text(temp ?? '',
                   style: temp!='No such city :('?
-                  TextStyle(fontSize: 90, fontWeight: FontWeight.w900)
+                  TextStyle(fontSize: 90, fontWeight: FontWeight.w900,)
                       :TextStyle(fontSize: 40, fontWeight: FontWeight.w900)
                   ),
 
@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                 children: <Widget>[
                   Container(
 //                  width: 300,
-                    child: Text(temp==''|| temp=='No such city :('? '':'${_city[0].toUpperCase()}${_city.substring(1)}',
+                    child: Text(temp==''||temp==null|| temp=='No such city :('? '':'${_city[0].toUpperCase()}${_city.substring(1)}',
                         style: TextStyle(fontSize: 70, fontWeight: FontWeight.w700)
                     ),
                   ),
