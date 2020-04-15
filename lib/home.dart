@@ -100,7 +100,7 @@ class _HomeState extends State<Home> {
                   ),
                 ],
               ),
-              SizedBox(height: 130,),
+              SizedBox(height: 40,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
